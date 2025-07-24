@@ -6,7 +6,7 @@ tiny by nature and provide the core async job functionality. In other words this
 In a nutshell just a JDBC RDBMS implementation.
 
 Examples in the `examples` module contain both free and enterprise versions. Examples that demonstrate premium features
-simply won't compile, since artifact are located in the private artifactory.
+simply won't compile, since artifacts are located in the private artifactory.
 Access to an artifactory is being granted upon the subscription being in place and license key granted.
 
 Examples that are available only upon the request and subscription are the following ones:
