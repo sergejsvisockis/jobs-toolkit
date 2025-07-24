@@ -36,17 +36,17 @@ Supported JDK versions - JDK 17 onwards.
 <dependency>
     <groupId>io.github.sergejsvisockis.jobs</groupId>
     <artifactId>jobs-toolkit-core</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
 </dependency>
 ```
 
 2. Crate a corresponding batch job schema. The JAR provides out of the box schema.
-   You can find the file within the `resources` directory and execute it manually or use a Liquibase, 
+   You can find a file within the `resources` directory and execute it manually or use a Liquibase, 
    Flyway or any other database versioning tool of your choice.
 3. Insert a job definition into the database `job_definition` table.
 
 3. Depending on the framework of your choice would it be, Spring, Helidon, Micronaut, pure Jakarta EE with Wildfly 
-   schedulers or anything else the job has to look like this:
+   schedulers or anything else the job has to look like this way:
 ```java
 public class ExperimentJob extends AbstractJob {
 
@@ -75,8 +75,9 @@ public class ExperimentJob extends AbstractJob {
 }
 ```
 
-For a EJB deployment a setter injection has to be used, since EJBs do not support constructor injection the repository
-has to be set in the `@PostConstruct` method:
+For a EJB deployment a setter injection has to be used. 
+
+Since EJBs do not support constructor injection, repository has to be set in the `@PostConstruct` method:
 ```java
 @Startup
 @Singleton
@@ -111,7 +112,7 @@ public class ExperimentJob extends AbstractJob {
 }
 ```
 
-Note that it is mandatory to override the `run` method since in encapsulates all the necessary 
+Note that this is mandatory to override the `run` method since in encapsulates all the necessary 
 locking and multithreading logic. Otherwise, the job will not just operate as expected.
 
 4. Define a JobRepository bean in case of Spring, or instantiate it manually in case of any other framework,
