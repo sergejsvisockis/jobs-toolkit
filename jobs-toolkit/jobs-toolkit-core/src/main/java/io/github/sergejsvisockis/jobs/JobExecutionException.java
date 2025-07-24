@@ -7,17 +7,36 @@ package io.github.sergejsvisockis.jobs;
  */
 public class JobExecutionException extends Exception {
 
+    /**
+     * Default constructor.
+     */
     public JobExecutionException() {
     }
 
+    /**
+     * Constructs a JobExecutionException with a specified message.
+     *
+     * @param message the detail message.
+     */
     public JobExecutionException(String message) {
         super(message);
     }
 
+    /**
+     * Constructs a JobExecutionException with a specified message and cause.
+     *
+     * @param message the detail message.
+     * @param cause   the cause of the exception.
+     */
     public JobExecutionException(String message, Throwable cause) {
         super(message, cause);
     }
 
+    /**
+     * Constructs a JobExecutionException with a specified cause.
+     *
+     * @param cause the cause of the exception.
+     */
     public JobExecutionException(Throwable cause) {
         super(cause);
     }

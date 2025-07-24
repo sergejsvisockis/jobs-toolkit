@@ -1,11 +1,12 @@
 package io.github.sergejsvisockis.jobs;
 
-import io.github.sergejsvisockis.jobs.repository.JobRepository;
 import io.github.sergejsvisockis.jobs.lockrepository.LockRepository;
+import io.github.sergejsvisockis.jobs.repository.JobRepository;
 
 import java.util.Optional;
 
 /**
+ * <p>
  * Job API which is supposed to execute some regular operations.
  * Implements a distributed lock to avoid working with the same data at the same time.
  * </p>
@@ -19,18 +20,37 @@ public abstract class AbstractJob {
     private JobRepository jobRepository;
     private LockRepository lockRepository;
 
+    /**
+     * Default no-args constructor is needed to allow instantiating child classes to use setter-injection
+     */
     public AbstractJob() {
     }
 
+    /**
+     * Constructor with dependencies.
+     *
+     * @param jobRepository the job repository
+     * @param lockRepository the lock repository
+     */
     public AbstractJob(JobRepository jobRepository, LockRepository lockRepository) {
         this.jobRepository = jobRepository;
         this.lockRepository = lockRepository;
     }
 
+    /**
+     * Sets the job repository.
+     *
+     * @param jobRepository the job repository
+     */
     public void setJobRepository(JobRepository jobRepository) {
         this.jobRepository = jobRepository;
     }
 
+    /**
+     * Sets the lock repository.
+     *
+     * @param lockRepository the lock repository
+     */
     public void setLockRepository(LockRepository lockRepository) {
         this.lockRepository = lockRepository;
     }
