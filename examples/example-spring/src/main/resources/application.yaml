@@ -1,0 +1,10 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/jobs_db
+    username: postgres
+    password: postgres
+  liquibase:
+    change-log: classpath:liquibase/db.changelog.xml

@@ -1,0 +1,26 @@
+@startuml
+
+control job
+database db
+database lock_storage
+
+job -> db: fetch job definition
+return job definition
+job -> job: if definition is not found fail with an exception
+job -> lock_storage: fetch lock metadata
+return lock metadata
+job -> job: check if lock already acquired\nand if so proceed with an execution\nand skip starting the new instance
+job -> lock_storage: acquire lock
+return acquired lock metadata
+job -> db: capture job execution state as 'RUNNING'
+return job execution
+alt execute the job
+    job -> job: execute job logic
+    job -> db: capture job execution state as 'COMPLETED'
+    job -> lock_storage: release lock
+else fail to execute
+    job -> db: capture job execution state as 'FAILED'
+    job -> lock_storage: release lock
+end
+
+@enduml

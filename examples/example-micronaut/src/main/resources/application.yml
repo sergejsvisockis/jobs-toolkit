@@ -1,0 +1,10 @@
+micronaut:
+  server:
+    port: 8081
+
+datasource:
+  server-name: localhost
+  port: 5434
+  database-name: jobs_db
+  user: postgres
+  password: postgres

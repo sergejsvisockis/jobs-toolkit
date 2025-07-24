@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="1" author="svisockis">
+        <sqlFile path="classpath:jobs_ddl_v1.0.0.sql"/>
+    </changeSet>
+
+    <changeSet id="2" author="svisockis">
+        <insert tableName="job_definition">
+            <column name="job_name" value="ExperimentJob"/>
+            <column name="job_description" value="An experiment job to test an API"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="3" author="svisockis">
+        <insert tableName="job_definition">
+            <column name="job_name" value="ParallelJob"/>
+            <column name="job_description" value="One more job to test parallelism"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="4" author="svisockis">
+        <insert tableName="job_definition">
+            <column name="job_name" value="AJob"/>
+            <column name="job_description" value="A job"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

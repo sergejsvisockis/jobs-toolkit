@@ -1,0 +1,5 @@
+server:
+  port: 8181
+
+mongo:
+  url: mongodb://mongo:mongo@localhost:27017/
