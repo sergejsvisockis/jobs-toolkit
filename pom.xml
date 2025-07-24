@@ -10,6 +10,11 @@
     <packaging>pom</packaging>
 
     <name>Jobs Toolkit :: Aggregate POM</name>
+    <description>
+        A tiny job API which is supposed to provide a very simple and lightweight scheduled job capability.
+    </description>
+
+    <url>https://github.com/sergejsvisockis/jobs-toolkit/tree/master</url>
 
     <licenses>
         <license>
@@ -17,6 +22,21 @@
             <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
         </license>
     </licenses>
+
+    <developers>
+        <developer>
+            <name>Sergejs Visockis</name>
+            <email>sergei.visotsky@gmail.com</email>
+            <organization>Sonatype</organization>
+            <organizationUrl>https://github.com/sergejsvisockis/</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/sergejsvisockis/jobs-toolkit.git</connection>
+        <developerConnection>scm:git:ssh://github.com:sergejsvisockis/jobs-toolkit.git</developerConnection>
+        <url>https://github.com/sergejsvisockis/jobs-toolkit/tree/master</url>
+    </scm>
 
     <profiles>
         <profile>
