@@ -17,11 +17,13 @@ Examples that are available only upon the request and subscription are the follo
 
 Overall enterprise version contains the following additional features:
 * MongoDB support (for both job metadata storage and locking)
+* [TODO] Cassandra support (for both job metadata storage and locking)
 * Zookeeper distributed lock
 * Redis distributed lock
-* Dead Letter Queue
-* Retry mechanism (in case the job has failed)
-* AWS DynamoDB support (both job metadata storage and locking)
-* AWS S3 support (for job metadata storage)
-* Azure Cosmos DB support (both job metadata storage and locking)
-* GCP (both job metadata storage and locking)
+* [TODO] Hazelcast distributed lock
+* [TODO] Dead Letter Queue
+* [TODO] Retry mechanism (in case the job has failed)
+* [TODO] AWS DynamoDB support (both job metadata storage and locking)
+* [TODO] AWS S3 support (for job metadata storage)
+* [TODO] Azure Cosmos DB support (both job metadata storage and locking)
+* [TODO] GCP (both job metadata storage and locking)
