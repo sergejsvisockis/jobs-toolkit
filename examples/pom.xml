@@ -12,6 +12,7 @@
     <name>Jobs Toolkit :: Examples :: Aggregate POM</name>
 
     <modules>
+        <module>example-aws-dynamodb</module>
         <module>example-ejb</module>
         <module>example-micronaut</module>
         <module>example-mongo</module>
