@@ -4,9 +4,9 @@ A tiny job API which is supposed to provide a very simple and lightweight schedu
 intuitive and declarative Java API which allows you to build complex jobs much easier and faster.
 Platform agnostic Java API which could be used in any application no matter what platform it would be.
 
-Available in both free Open Source and enterprise editions.
+Available in both free Open Source and Enterprise Editions.
 
-You can find a full list of enterprise features in the [enterprise README](./enterprise.md). Elevate your experience
+You can find a full list of enterprise features in the [Enterprise README](./enterprise.md). Elevate your experience
 with all the available features that are needed for your team and project.
 Reduce your time for a repetitive data persistence and much more... solution design and coding.
 
