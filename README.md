@@ -36,7 +36,7 @@ Supported JDK versions - JDK 17 onwards.
 <dependency>
     <groupId>io.github.sergejsvisockis.jobs</groupId>
     <artifactId>jobs-toolkit-core</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 ```
 
