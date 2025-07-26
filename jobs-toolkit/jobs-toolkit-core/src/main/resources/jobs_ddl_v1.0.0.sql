@@ -11,6 +11,7 @@ CREATE TABLE job_execution
     job_name     VARCHAR(45)                                                    NOT NULL,
     last_run     TIMESTAMP DEFAULT CURRENT_TIMESTAMP                            NOT NULL,
     state        VARCHAR(9) CHECK (state IN ('RUNNING', 'COMPLETED', 'FAILED')) NOT NULL,
+    CONSTRAINT job_execution_pk PRIMARY KEY (execution_id),
     CONSTRAINT job_definition_fk FOREIGN KEY (job_name)
         REFERENCES job_definition (job_name)
 );
