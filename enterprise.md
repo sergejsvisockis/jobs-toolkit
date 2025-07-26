@@ -16,6 +16,8 @@ Enterprise examples are the following ones:
 * example-redis-lock
 * example-zookeeper-lock
 * example-aws-dynamodb
+* example-retry
+* example-retry-jdbc
 
 Overall enterprise version contains the following additional features:
 * MongoDB support (for both job metadata storage and locking)
