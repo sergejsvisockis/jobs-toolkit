@@ -36,8 +36,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>io.github.sergejsvisockis.jobs</groupId>
-            <artifactId>jobs-toolkit-enterprise-retry</artifactId>
+            <groupId>io.github.sergejsvisockis.jobs.retry</groupId>
+            <artifactId>jobs-toolkit-enterprise-retry-core</artifactId>
         </dependency>
 
         <dependency>
