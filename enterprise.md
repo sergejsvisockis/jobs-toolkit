@@ -26,8 +26,8 @@ Overall enterprise version contains the following additional features:
 * [Not available yet] Dead Letter Queue
 * Retry mechanism (in case the job has failed)
   * [Not available yet] Retry history is persisted into the database (depending on the implementation)
-* [Not available yet] AWS DynamoDB support (both job metadata storage and locking)
-* AWS S3 support (for job metadata storage)
+* AWS DynamoDB support (both job metadata storage and locking)
+* [Not available yet] AWS S3 support (for job metadata storage)
 * [Not available yet] Azure Cosmos DB support (both job metadata storage and locking)
 * [Not available yet] GCP (both job metadata storage and locking)
 * [Not available yet] UI to track an execution state, time and anomalies
