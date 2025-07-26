@@ -19,6 +19,7 @@
         <module>example-quarkus</module>
         <module>example-redis-lock</module>
         <module>example-retry</module>
+        <module>example-retry-jdbc</module>
         <module>example-spring</module>
         <module>example-zookeeper-lock</module>
     </modules>
