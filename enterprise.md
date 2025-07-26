@@ -25,7 +25,11 @@ Overall enterprise version contains the following additional features:
 * [Not available yet] Hazelcast distributed lock
 * [Not available yet] Dead Letter Queue
 * Retry mechanism (in case the job has failed)
-  * [Not available yet] Retry history is persisted into the database (depending on the implementation)
+  * [Partially available] Retry history is persisted into the database (depending on the implementation)
+    * RDBMS
+    * [Not available yet] Mongo
+    * [Not available yet] DynamoDB
+    * [Not available yet] Cassandra
 * AWS DynamoDB support (both job metadata storage and locking)
 * [Not available yet] AWS S3 support (for job metadata storage)
 * [Not available yet] Azure Cosmos DB support (both job metadata storage and locking)
